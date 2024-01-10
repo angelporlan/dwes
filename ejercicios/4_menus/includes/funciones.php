@@ -37,6 +37,7 @@ function checkuser($user, $password)
         if ($usuario->email == $user and $usuario->password == $password) {
 
             //Me creo el objeto. Podría haber devuelto directamente el object literal, sin usar la clase Usuario
+            require_once('../modelo/modelo.php');
             $usuarioObjeto = new Usuario;
             $usuarioObjeto->nombre = $usuario->nombre;
             $usuarioObjeto->apellidos = $usuario->apellidos;

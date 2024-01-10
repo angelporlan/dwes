@@ -131,5 +131,19 @@
         "email": "angeelporlan4@3gmail.com",
         "password": "3",
         "imagen": "default.png"
+    },
+    {
+        "nombre": "Angel",
+        "apellidos": "Porlan",
+        "email": "angeelp2134orlan4@gmail.com",
+        "password": "1",
+        "imagen": "default.png"
+    },
+    {
+        "nombre": "Angel",
+        "apellidos": "Porlan",
+        "email": "angeelporlan44@gmail.com",
+        "password": "1",
+        "imagen": "default.png"
     }
 ]

@@ -13,9 +13,19 @@
 
     <main>
     <?php
-        echo ("<h2>Total de usuarios de alta: " . 2 . "</h2>");
-        echo ("<p>Mostraremos la fecha y hora del ultimo usuario con cookey")
+        $user_list = [];
+        $file = 'data.json';
+        $jsonData = file_get_contents("bbdd/{$file}");
+        $user_list = json_decode($jsonData);
+        echo ("<h2>Total de usuarios de alta: " . count($user_list) . "</h2>");
+        echo ("<p>Mostraremos la fecha y hora del ultimo usuario con cookey");
+        session_start();
+        echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
         ?>
+
+        
     </main>
 
 
