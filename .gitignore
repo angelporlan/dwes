@@ -6,3 +6,11 @@
 **/.DS_store
 **/.DS_Store
 
+#./pruebas/*
+#pruebas/*.*
+/pruebas
+
+#./profesor/*
+#profesor/*.*
+/profesor
+
