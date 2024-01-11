@@ -1,3 +1,12 @@
+<?php
+
+require_once('modelo/modelo.php');
+
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +28,6 @@
         $user_list = json_decode($jsonData);
         echo ("<h2>Total de usuarios de alta: " . count($user_list) . "</h2>");
         echo ("<p>Mostraremos la fecha y hora del ultimo usuario con cookey");
-        session_start();
         echo "<pre>";
 print_r($_SESSION);
 echo "</pre>";

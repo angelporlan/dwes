@@ -1,4 +1,6 @@
 <?php
+require_once('modelo/modelo.php');
+
 session_start();
 
 if (isset($_SESSION["errorEmail"])) {
@@ -23,6 +25,7 @@ if (isset($_SESSION["dataOK"])) {
 // print "</pre>\n";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

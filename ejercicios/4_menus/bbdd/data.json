@@ -145,5 +145,26 @@
         "email": "angeelporlan44@gmail.com",
         "password": "1",
         "imagen": "default.png"
+    },
+    {
+        "nombre": "Angel",
+        "apellidos": "Porlan",
+        "email": "1ngeelporlan4@gmail.com",
+        "password": "1",
+        "imagen": "default.png"
+    },
+    {
+        "nombre": "Angel",
+        "apellidos": "Porlan",
+        "email": "angeelporlan4@gmail.com2134",
+        "password": "1",
+        "imagen": "default.png"
+    },
+    {
+        "nombre": "Nacho",
+        "apellidos": "macho",
+        "email": "nachoelmacho@gmail.com",
+        "password": "lechedeangel",
+        "imagen": "default.png"
     }
 ]

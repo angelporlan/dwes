@@ -24,3 +24,17 @@ main > * {
     margin: 10px;
 }
 
+table, th, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}

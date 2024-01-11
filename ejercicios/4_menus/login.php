@@ -1,4 +1,7 @@
 <?php
+
+require_once('modelo/modelo.php');
+
 session_start();
 
 

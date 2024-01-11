@@ -32,6 +32,8 @@ li:hover {
     cursor: pointer;
 }
 
-.right {
+.right-zone {
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
 }
