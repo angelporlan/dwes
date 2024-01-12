@@ -9,9 +9,11 @@
             if (isset($_SESSION["userLogin"])) {
                 echo "<li><a href='user.php'>Hola, " . $_SESSION["userLogin"]->email ."</a></li>";
                 echo "<li><a href='logout.php'>Log out</a></li>";
+            } else {
+                echo "<li><a href='login.php'>Log in</a></li>";
             }
         ?>
-        <li><a href="login.php">Log in</a></li>
+        
     </ul>
 
 </nav>

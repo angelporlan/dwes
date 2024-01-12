@@ -1,5 +1,6 @@
 <?php
 
+require_once('../modelo/modelo.php');
 
 //######## FUNCION RECOGER
 //Recoge los datos de los formularios y los depura para no meter código malicioso
@@ -30,4 +31,19 @@ function existeUsuario($email) {
         }
     }
     return false;
+}
+
+function findAndRetrieveUser($email, $password) {
+    $lista_usuarios = [];
+    $file = '../bbdd/data.json';   
+
+    $jsonData = file_get_contents("./{$file}", FILE_USE_INCLUDE_PATH);
+    $lista_usuarios = json_decode($jsonData);
+
+    foreach ($lista_usuarios as $user) {
+        if ($user->email == $email && password_verify($password, $user->password)) {
+            return $user;
+        }
+    }
+    return null;
 }

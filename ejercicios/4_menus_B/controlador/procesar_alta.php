@@ -10,28 +10,32 @@
         $password = recoge("password");
         $passwordRepeat = recoge("passwordRepeat");
         if ($_FILES["img"]["error"] == UPLOAD_ERR_OK) {
-            $photo = $_FILES["img"]["name"];
+            $img = $_FILES["img"]["name"];
             $tamBytes = $_FILES["img"]["size"];
         }
 
         if ($email == '' || $password == '' || $passwordRepeat == '') {
-            $_SESSION['error'] = '<p>Las casillas con * son obligatorias</p>';
+            $_SESSION['errorAlta'] = '<p class="error">Las casillas con * son obligatorias</p>';
             header("Location: ../alta.php");
+            exit();
         }
 
         if (!str_contains($email, '@') || !str_contains($email, '.')) {
-            $_SESSION['error'] = '<p>Email invalido</p>';
+            $_SESSION['errorAlta'] = '<p class="error">Email invalido</p>';
             header("Location: ../alta.php");
+            exit();
         }
 
         if (existeUsuario($email)) {
-            $_SESSION['error'] = '<p>Email registrado</p>';
+            $_SESSION['errorAlta'] = '<p class="error">Email registrado</p>';
             header("Location: ../alta.php");
+            exit();
         }
 
         if ($password != $passwordRepeat) {
-            $_SESSION['error'] = '<p>Las contraseñas no coinciden</p>';
+            $_SESSION['errorAlta'] = '<p class="error">Las contraseñas no coinciden</p>';
             header("Location: ../alta.php");
+            exit();
         }
 
         if ($_FILES["img"]["error"] == UPLOAD_ERR_OK) {
@@ -42,15 +46,33 @@
                 if ($res) {
                     unset($_SESSION["errorImg"]);
                 } else {
-                    $_SESSION["errorImg"] = "<p>Error al guardar fichero</p>";
+                    $_SESSION["errorImg"] = '<p class="error">Error al guardar fichero</p>';
                 }
             } else {
-                $_SESSION["errorImg"] = "<p>Tamaño imagen demasiado grande</p>";
-                $_SESSION["dataOK"] = false;
+                $_SESSION["errorImg"] = '<p class="error">Tamaño imagen demasiado grande</p>';
+                exit();
             }
         }
 
-        const $user = new User;
+        $user = new User();
+        $user->name = $name;
+        $user->lastname = $lastname;
+        $user->email = $email;
+        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+        $user->password = $passwordHash;
+        if ($_FILES["img"]["error"] == UPLOAD_ERR_OK) {
+            $user->img = $img;
+        }
 
+        $lista_usuarios = [];
+        $file = '../bbdd/data.json';
+    
+        $jsonData = file_get_contents("./{$file}", FILE_USE_INCLUDE_PATH);
+        $lista_usuarios = json_decode($jsonData);
 
+        array_push($lista_usuarios, $user);
+        $json_usuarios = json_encode($lista_usuarios, JSON_PRETTY_PRINT);
+        file_put_contents("../bbdd/data.json", $json_usuarios);
+        $_SESSION['userSing'] = '<p class="sing">Usuario añadido</p>';
     }
+header("Location: ../alta.php");

@@ -1,3 +1,16 @@
 [
-    
+    {
+        "name": "Angel",
+        "lastname": "Porlan",
+        "email": "angeelporlan4@gmail.com",
+        "password": "$2y$10$2kJrySV\/91d9mYnUHrP1i.wuzBPGNF6xQgYfgs.mZ2FuciL7qMcl2",
+        "img": "106339954.jpg"
+    },
+    {
+        "name": "Angel",
+        "lastname": "paco",
+        "email": "23836300@cervantes.es",
+        "password": "$2y$10$xY1o5IVpFjX\/DxdPndwJJ.YluYhg.N4vZn\/fUJ3fk\/aixDPtl07ji",
+        "img": "default.png"
+    }
 ]
