@@ -79,7 +79,10 @@
             $usuario->nombre = $name;
             $usuario->apellidos = $lastname;
             $usuario->email = $email;
-            $usuario->password = $pass1;
+            //Codifico la contraseña
+            $passwordHash = password_hash($pass1, PASSWORD_DEFAULT);
+            $usuario->password = $passwordHash;
+
             if ($_FILES["photo"]["error"] == UPLOAD_ERR_OK) {
                 $usuario->imagen = $photo;
             }

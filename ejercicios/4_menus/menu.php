@@ -14,9 +14,11 @@
         $email_usuario = $_SESSION["userObject"]->email;
         echo " <li class='right red'><a href='perfil.php'>Hola, {$email_usuario}</a></li>";
         }
+
+        
         ?>
 
-        <li class="right"><a href="login.php">Login</a></li>
+        
         <?php 
            echo " <li class='right red'><a href='logout.php'>Log out</a></li>";
         ?>

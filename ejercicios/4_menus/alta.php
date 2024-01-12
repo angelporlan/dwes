@@ -19,11 +19,6 @@ if (isset($_SESSION["dataOK"])) {
     $dataOK = $_SESSION["dataOK"];
 }
 
-// print "<pre>";
-// print "Matriz \$_SESSION" . "<br>";
-// print_r($_SESSION);
-// print "</pre>\n";
-
 ?>
 
 <!DOCTYPE html>

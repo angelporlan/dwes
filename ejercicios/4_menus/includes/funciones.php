@@ -34,7 +34,9 @@ function checkuser($user, $password)
     $lista_usuarios = json_decode($jsonData);
 
     foreach ($lista_usuarios as $usuario) {
-        if ($usuario->email == $user and $usuario->password == $password) {
+        if (
+            $usuario->email == $user and
+            password_verify($password, $usuario->password)) {
 
             //Me creo el objeto. Podría haber devuelto directamente el object literal, sin usar la clase Usuario
             require_once('../modelo/modelo.php');
@@ -52,7 +54,7 @@ function checkuser($user, $password)
 }
 
 
-//######## FUNCION CHECKUSER
+//######## FUNCION 
 //Función para comprobar las credenciales de un usuario
 //ENTRADA: el email y el password 
 //SALIDA: objeto usario con sus datos en caso de existo y null en caso de error.
