@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = recoge("password");
 
     if ($email == null || $password == null) {
-        $_SESSION['errorLogin'] = "<p>Email y Contraseña obligario";
+        $_SESSION['errorLogin'] = "<p class='error'>Email y Contraseña obligario";
         header("Location: ../login.php");
         exit();
     }
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user == null) {
         header("Location: ../login.php");
-        $_SESSION['errorLogin'] = "<p>Email o Contraseña incorrecto";
+        $_SESSION['errorLogin'] = "<p class='error'>Email o Contraseña incorrecto";
         exit();
     }
 

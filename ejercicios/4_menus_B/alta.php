@@ -15,11 +15,11 @@
     <form action="controlador/procesar_alta.php" method="post" enctype="multipart/form-data">
         <header>Alta de Usuario</header>
         <label for="name">Nombre: </label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" value=<?php if (isset($_SESSION['name'])){echo $_SESSION['name']; unset($_SESSION['name']);}?>>
         <label for="lastname">Apellido: </label>
-        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="lastname" id="lastname" value=<?php if (isset($_SESSION['lastname'])){echo $_SESSION['lastname']; unset($_SESSION['lastname']);}?>>
         <label for="email">*Email: </label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="email" value=<?php if (isset($_SESSION['email'])){echo $_SESSION['email']; unset($_SESSION['email']);}?>>
         <label for="password">*Contraseña: </label>
         <input type="password" name="password" id="password">
         <label for="passwordRepeat">*Repite Contraseña: </label>

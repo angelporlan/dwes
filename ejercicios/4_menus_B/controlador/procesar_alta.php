@@ -14,6 +14,10 @@
             $tamBytes = $_FILES["img"]["size"];
         }
 
+        $_SESSION['name'] = $name;
+        $_SESSION['lastname'] = $lastname;
+        $_SESSION['email'] = $email;
+
         if ($email == '' || $password == '' || $passwordRepeat == '') {
             $_SESSION['errorAlta'] = '<p class="error">Las casillas con * son obligatorias</p>';
             header("Location: ../alta.php");
@@ -54,6 +58,10 @@
             }
         }
 
+        unset($_SESSION['name']);
+        unset($_SESSION['lastname']);
+        unset($_SESSION['email']);
+
         $user = new User();
         $user->name = $name;
         $user->lastname = $lastname;
@@ -69,6 +77,11 @@
     
         $jsonData = file_get_contents("./{$file}", FILE_USE_INCLUDE_PATH);
         $lista_usuarios = json_decode($jsonData);
+
+        //cookie
+        $userCookie = json_encode(array($email, date("d, m, Y"), date("H:i")));
+        setcookie('last_user', $userCookie, time() + 3600, '/');
+
 
         array_push($lista_usuarios, $user);
         $json_usuarios = json_encode($lista_usuarios, JSON_PRETTY_PRINT);

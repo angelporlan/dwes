@@ -60,3 +60,13 @@ main p {
     margin-top: 8px;
     font-size: 0.7rem;
 }
+
+.error {
+    background-color: red;
+    margin-bottom: 4px;
+    color: white;
+    border-radius: 12px;
+    font-size: .8rem;
+    padding: 4px;
+    text-align: center;
+}

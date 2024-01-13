@@ -7,10 +7,31 @@
         "img": "106339954.jpg"
     },
     {
-        "name": "Angel",
-        "lastname": "paco",
-        "email": "23836300@cervantes.es",
-        "password": "$2y$10$xY1o5IVpFjX\/DxdPndwJJ.YluYhg.N4vZn\/fUJ3fk\/aixDPtl07ji",
+        "name": "Juan",
+        "lastname": "Gimenez",
+        "email": "juan@gmail.com",
+        "password": "$2y$10$qXfUiK4jxUB.W4nYJNPJAOp6EdjpCuKTcMIhstFNFfUqofroWZCPi",
+        "img": "descarga.jpg"
+    },
+    {
+        "name": "John",
+        "lastname": "Bultrago",
+        "email": "john@gmail.com",
+        "password": "$2y$10$QDq3TVuyWDn1.Fm1GPHuLe8Eo7or98SmxWrMZ2JWPEZrMJNFpk.ru",
+        "img": "default.png"
+    },
+    {
+        "name": "Andres",
+        "lastname": null,
+        "email": "andres@gmail.com",
+        "password": "$2y$10$8.Qd\/Yxs7wwmNdpnB5TyNOusUfJVCCYK6ClSBkNw0EUp00efzOIXy",
+        "img": "default.png"
+    },
+    {
+        "name": "Alejandro",
+        "lastname": null,
+        "email": "a@k.c",
+        "password": "$2y$10$mKa1yR3j6fU4C8Idda7hu.fVhvwpefkKR0Hc.rhmPJUDM8msU2ZqK",
         "img": "default.png"
     }
 ]

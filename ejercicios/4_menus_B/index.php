@@ -19,6 +19,12 @@
             $jsonData = file_get_contents("bbdd/{$file}");
             $user_list = json_decode($jsonData);
             echo "<h2>Usuarios dados de alta: " . count($user_list) . "</h2>";
+            
+            if (isset($_COOKIE['last_user'])) {
+                $cookieData = json_decode($_COOKIE['last_user']);
+
+                echo "Último usuario de alta: " . $cookieData[0] . " el día " . $cookieData[1] . " a las " . $cookieData[2];
+            }
         ?>
         </header>
     </main>

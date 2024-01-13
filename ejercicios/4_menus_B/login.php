@@ -21,7 +21,7 @@
             
             <?php
                 if (isset($_SESSION['errorLogin'])) {
-                    echo $_SESSION['errorLogin'];
+                    echo "<p>" . $_SESSION['errorLogin'] . "</p>";
                     unset($_SESSION['errorLogin']);
                 }
             ?>
