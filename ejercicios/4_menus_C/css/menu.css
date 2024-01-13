@@ -1,0 +1,40 @@
+*, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body > header {
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+}
+
+li:hover {
+    background-color: rgba(0, 123, 255, .2);
+    border-bottom: 4px solid rgb(0, 123, 255);
+}
