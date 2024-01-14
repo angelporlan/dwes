@@ -7,17 +7,17 @@
         "img": "default.png"
     },
     {
-        "name": "Isabella",
-        "lastname": "Morgan",
-        "email": "isabella@example.com",
-        "password": null,
-        "img": "default.png"
-    },
-    {
         "name": "Angel",
         "lastname": "Porlan",
         "email": "angeelporlan4@gmail.com",
         "password": "$2y$10$CmXIRveHT322yj\/RUEpNs.4dczr66zdKux43SR.jlYztEaMYJjNQS",
         "img": "descarga.jpg"
+    },
+    {
+        "name": "a",
+        "lastname": "a",
+        "email": "a@a.a",
+        "password": "$2y$10$xh7wSAddNxdez5eSAX.MR.R6WsWj4YpJHobegjc0w3orpv\/HxhnFC",
+        "img": "default.png"
     }
 ]
