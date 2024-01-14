@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // if (!existeUsuario($gmial)) {
-    //     $_SESSION['errorLogin'] = "<p>Email no registrado";
-    //     header("Location: ../login.php");
-    //     exit();
-    // }
+    if (!existeUsuario($email)) {
+        $_SESSION['errorLogin'] = "<p class='error'>Email no registrado";
+        header("Location: ../login.php");
+        exit();
+    }
 
     $user = findAndRetrieveUser($email, $password);
 

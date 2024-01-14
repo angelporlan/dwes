@@ -7,6 +7,7 @@ function setup(_) {
 async function itemStore() {
     const dataItems = await item();
     console.log(dataItems);
+    const categories = new Set();
 
     const container = document.querySelector('.container');
 
@@ -62,8 +63,32 @@ async function itemStore() {
 
         nProduct.appendChild(nStart);
 
+        categories.add(data.category);
     });
 
+    const arrayCategories = [...categories];
+    const nDivCategories = document.createElement('div');
+    document.querySelector('.container-category').appendChild(nDivCategories);
+    const nh3Categories = document.createElement('h3');
+    nh3Categories.textContent = 'Categories:';
+    nDivCategories.appendChild(nh3Categories)
+
+    arrayCategories.forEach(category => {
+        const nDiv = document.createElement('div');
+        nDivCategories.appendChild(nDiv);
+
+        const nInput = document.createElement('input');
+        nInput.setAttribute('type', 'checkbox');
+        nInput.setAttribute('name', category);
+        nInput.setAttribute('id', category);
+        nInput.checked = true;
+        nDiv.appendChild(nInput);
+
+        const nLabel = document.createElement('label');
+        nLabel.setAttribute('for', category);
+        nLabel.textContent = category;
+        nDiv.appendChild(nLabel);
+    })
 }
 
 async function item() {

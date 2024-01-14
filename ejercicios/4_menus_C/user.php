@@ -21,7 +21,6 @@
 
         <div class="container">
                 <?php
-                // echo "<p class='email'>" . $email . "</p>";
                 echo "<img src='" . $imgRoot ."'>";
                 if ($name == null && $lastname == null) {
                     echo "<p class='name'>" . $email . "</p>";

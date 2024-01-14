@@ -13,7 +13,7 @@ main {
 
 form {
     max-width: 300px;
-    margin: 30px auto; /* Centra el formulario horizontalmente */
+    margin: 30px auto;
     background-color: #fff;
     padding: 15px;
     border-radius: 6px;

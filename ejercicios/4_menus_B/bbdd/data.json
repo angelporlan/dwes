@@ -1,55 +1,23 @@
 [
     {
-        "name": "Admin",
+        "name": "admin",
         "lastname": null,
         "email": "admin@gmail.com",
-        "password": "$2y$10$chqAMryvIL7wMKsh7K4RoOmOFuzwYCH4eTBx3697mR9KPY4aT0pfu",
-        "img": "admin.jpg"
+        "password": "$2y$10$a4mIGjvc88edBw5h93qjk.egafD797xionyfmTsNcOidxpVrWoydm",
+        "img": "default.png"
+    },
+    {
+        "name": "Isabella",
+        "lastname": "Morgan",
+        "email": "isabella@example.com",
+        "password": null,
+        "img": "default.png"
     },
     {
         "name": "Angel",
         "lastname": "Porlan",
         "email": "angeelporlan4@gmail.com",
-        "password": "$2y$10$2kJrySV\/91d9mYnUHrP1i.wuzBPGNF6xQgYfgs.mZ2FuciL7qMcl2",
-        "img": "106339954.jpg"
-    },
-        {"name": "Liam", "lastname": "Johnson", "email": "liam.johnson@example.com", "password": null, "img": "default.png"},
-        {"name": "Emma", "lastname": "Williams", "email": "emma.williams@example.com", "password": null, "img": "default.png"},
-        {"name": "Oliver", "lastname": "Smith", "email": "oliver.smith@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Davis", "email": "ava.davis@example.com", "password": null, "img": "default.png"},
-        {"name": "Noah", "lastname": "Brown", "email": "noah.brown@example.com", "password": null, "img": "default.png"},
-        {"name": "Isabella", "lastname": "Taylor", "email": "isabella.taylor@example.com", "password": null, "img": "default.png"},
-        {"name": "Sophia", "lastname": "Miller", "email": "sophia.miller@example.com", "password": null, "img": "default.png"},
-        {"name": "Jackson", "lastname": "Anderson", "email": "jackson.anderson@example.com", "password": null, "img": "default.png"},
-        {"name": "Olivia", "lastname": "Thomas", "email": "olivia.thomas@example.com", "password": null, "img": "default.png"},
-        {"name": "Lucas", "lastname": "Harris", "email": "lucas.harris@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Jones", "email": "ava.jones@example.com", "password": null, "img": "default.png"},
-        {"name": "Liam", "lastname": "Moore", "email": "liam.moore@example.com", "password": null, "img": "default.png"},
-        {"name": "Emma", "lastname": "Wilson", "email": "emma.wilson@example.com", "password": null, "img": "default.png"},
-        {"name": "Oliver", "lastname": "Martinez", "email": "oliver.martinez@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Perez", "email": "ava.perez@example.com", "password": null, "img": "default.png"},
-        {"name": "Noah", "lastname": "Robinson", "email": "noah.robinson@example.com", "password": null, "img": "default.png"},
-        {"name": "Isabella", "lastname": "Johnson", "email": "isabella.johnson@example.com", "password": null, "img": "default.png"},
-        {"name": "Sophia", "lastname": "White", "email": "sophia.white@example.com", "password": null, "img": "default.png"},
-        {"name": "Jackson", "lastname": "Clark", "email": "jackson.clark@example.com", "password": null, "img": "default.png"},
-        {"name": "Olivia", "lastname": "Lewis", "email": "olivia.lewis@example.com", "password": null, "img": "default.png"},
-        {"name": "Lucas", "lastname": "Ward", "email": "lucas.ward@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Scott", "email": "ava.scott@example.com", "password": null, "img": "default.png"},
-        {"name": "Liam", "lastname": "Young", "email": "liam.young@example.com", "password": null, "img": "default.png"},
-        {"name": "Emma", "lastname": "Evans", "email": "emma.evans@example.com", "password": null, "img": "default.png"},
-        {"name": "Oliver", "lastname": "Hill", "email": "oliver.hill@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Cooper", "email": "ava.cooper@example.com", "password": null, "img": "default.png"},
-        {"name": "Noah", "lastname": "King", "email": "noah.king@example.com", "password": null, "img": "default.png"},
-        {"name": "Isabella", "lastname": "Morgan", "email": "isabella.morgan@example.com", "password": null, "img": "default.png"},
-        {"name": "Sophia", "lastname": "Bell", "email": "sophia.bell@example.com", "password": null, "img": "default.png"},
-        {"name": "Jackson", "lastname": "Wood", "email": "jackson.wood@example.com", "password": null, "img": "default.png"},
-        {"name": "Olivia", "lastname": "Rogers", "email": "olivia.rogers@example.com", "password": null, "img": "default.png"},
-        {"name": "Lucas", "lastname": "Cole", "email": "lucas.cole@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Stewart", "email": "ava.stewart@example.com", "password": null, "img": "default.png"},
-        {"name": "Liam", "lastname": "Perry", "email": "liam.perry@example.com", "password": null, "img": "default.png"},
-        {"name": "Emma", "lastname": "Cox", "email": "emma.cox@example.com", "password": null, "img": "default.png"},
-        {"name": "Oliver", "lastname": "Hayes", "email": "oliver.hayes@example.com", "password": null, "img": "default.png"},
-        {"name": "Ava", "lastname": "Powell", "email": "ava.powell@example.com", "password": null, "img": "default.png"},
-        {"name": "Noah", "lastname": "Bryant", "email": "noah.bryant@example.com", "password": null, "img": "default.png"}
-    
+        "password": "$2y$10$CmXIRveHT322yj\/RUEpNs.4dczr66zdKux43SR.jlYztEaMYJjNQS",
+        "img": "descarga.jpg"
+    }
 ]

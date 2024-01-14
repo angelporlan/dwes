@@ -41,13 +41,25 @@
                                 echo "<p>{$user->lastname}</p>";
                             }
                             echo "<p>" . $user->email . "</p>";
+                            ?>
+                            <form action="borrar_usuario.php" method="get">
+                                <input type="hidden" name="email" value="<?php echo $user->email; ?>">
+                                <button type="submit" class="delete-user">Eliminar Usuario</button>
+                            </form>
+
+                            <?php
                             echo "</div>";
                         }
                         echo "</div>";
             } else {
             ?>
+                <div class="main">
                 <div class="container">
+                    <!-- <input type="checkbox" id="category" name="category"/>
+                    <label for="category">men's</label> -->
+                </div>
 
+<div class="container-category"></div>
                 </div>
             <?php
             }
