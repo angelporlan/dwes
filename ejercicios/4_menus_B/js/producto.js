@@ -9,13 +9,16 @@ function setProduct() {
     console.log(product) 
 
     const div = document.querySelector('.product');
+    const divProduct = document.createElement('div');
+    divProduct.setAttribute('class', 'product-zone');
+    div.appendChild(divProduct)
 
     const right = document.createElement('div');
     right.setAttribute('class', 'right');
     const left = document.createElement('div');
     left.setAttribute('class', 'left');
-    div.appendChild(right);
-    div.appendChild(left);
+    divProduct.appendChild(right);
+    divProduct.appendChild(left);
 
     const nImg = document.createElement('img');
     nImg.setAttribute('src', product.image);
@@ -35,6 +38,6 @@ function setProduct() {
 
     const nDescription = document.createElement('p');
     nDescription.textContent = product.description;
-    left.appendChild(nDescription);
+    div.appendChild(nDescription);
 
 }

@@ -31,6 +31,10 @@ async function itemStore() {
         const nH2 = document.createElement('h2');
         nH2.textContent = data.title;
         nLeft.appendChild(nH2);
+        nH2.addEventListener('click', function(){
+            localStorage.setItem('product', JSON.stringify(data));
+            window.location.href = './producto.php';
+        });
 
         const nPrice = document.createElement('b');
         nPrice.textContent = data.price + '$';

@@ -119,6 +119,11 @@ img {
     margin: 10px 0;
 }
 
+.product h2:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
 .button-product {
     position: absolute;
     bottom: 10px;

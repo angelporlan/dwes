@@ -61,6 +61,11 @@
 
 <div class="container-category"></div>
                 </div>
+
+                <div class="comments">
+                    <header>0 Comentarios</header>
+                    
+                </div>
             <?php
             }
         ?>
