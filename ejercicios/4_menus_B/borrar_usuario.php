@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $lista_usuarios = [];
 $file = './bbdd/data.json';
@@ -17,6 +18,14 @@ foreach ($lista_usuarios as $index => $user) {
 
 $json_usuarios = json_encode(array_values($lista_usuarios), JSON_PRETTY_PRINT);
 file_put_contents("./bbdd/data.json", $json_usuarios);
+
+if ($_SESSION['userLogin']->email != 'admin@gmail.com') {
+    unset($_SESSION['userLogin']);
+}
+
+if ($_SESSION['userLogin']->email == 'admin@gmail.com') {
+    unset($_SESSION['userLogin']);
+}
 
 header("Location: ./index.php");
 ?>

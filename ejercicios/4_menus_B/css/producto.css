@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(245, 242, 242);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.product {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 40px 50px;
+    border-radius: 10px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+}
+
+.right {
+    border: 1px solid black;
+
+}
+
+.left {
+    border: 1px solid black;
+}
+
+
+
+
+
+
+

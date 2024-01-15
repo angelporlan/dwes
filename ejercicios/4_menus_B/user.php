@@ -29,25 +29,30 @@
                     echo "<p class='name'>" . $name . " " . $lastname . "</p>";
                 }
                 ?>
+
+                <form action="borrar_usuario.php" method="get">
+                    <input type="hidden" name="email" value="<?php echo $email; ?>">
+                    <button type="submit" class="delete-user">Eliminar Usuario</button>
+                </form>
         </div>
 
-        <div class="container-info">
+        <!-- <div class="container-info">
             <header>Configuración de usuario</header>
             <div class="imgs">
   <label for="perro"><input type="radio" id="perro" name="animalImg" value="perro"><img src="./bbdd/perro.jpg"></label>
   <label for="gato"><input type="radio" id="gato" name="animalImg" value="gato"><img src="./bbdd/gato.jpg"></label>
   <label for="capibara"><input type="radio" id="capibara" name="animalImg" value="capibara"><img src="./bbdd/capibara.jpg"></label>
   <label for="oso"><input type="radio" id="oso" name="animalImg" value="oso"><img src="./bbdd/oso.webp"></label>
-</div>
+</div> -->
 
 
 
-<div class="radios">
+<!-- <div class="radios">
   <input type="radio" id="perro" name="animalImg" value="perro">
   <input type="radio" id="gato" name="animalImg" value="gato">
   <input type="radio" id="capibara" name="animalImg" value="capibara">
   <input type="radio" id="oso" name="animalImg" value="oso">
-</div>
+</div> -->
         </div>
     </main>
 

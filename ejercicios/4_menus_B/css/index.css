@@ -82,7 +82,7 @@ img {
     cursor: pointer;
 }
 
-.delate-user:hover {
+.delete-user:hover {
     background-color: rgb(197, 7, 7);
     cursor: pointer;
 }

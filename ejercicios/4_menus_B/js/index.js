@@ -44,6 +44,10 @@ async function itemStore() {
         nButton.setAttribute('class', 'button-product');
         nButton.textContent = 'Ir al producto';
         nProduct.appendChild(nButton);
+        nButton.addEventListener('click', function(){
+            localStorage.setItem('product', JSON.stringify(data));
+            window.location.href = './producto.php';
+        });
 
         const nStart = document.createElement('div');
         nStart.setAttribute('class', 'start-rate');
