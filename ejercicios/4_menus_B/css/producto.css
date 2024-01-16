@@ -26,7 +26,7 @@ img {
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    width: 70%;
 }
 
 .product > p {
@@ -39,14 +39,50 @@ img {
     max-width: 60%;
 }
 
-.right {
+/* .right {
     border: 1px solid black;
 
-}
+} */
 
 .left {
-    border: 1px solid black;
     margin-left: 2rem;
+}
+
+.comments {
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 40px 50px;
+    border-radius: 10px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.comments img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-input {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.comment-input > input {
+    margin-left: 1rem;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.comment-input > input::placeholder, .comment-input > input::value{
+    margin-left: 1rem;
+}
+
+.comment-input > strong {
+    color: #007bff;
 }
 
 

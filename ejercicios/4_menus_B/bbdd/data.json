@@ -6,42 +6,277 @@
         "password": "$2y$10$5nDPeZ4E9JVGztp2WMB2X..buZ0kMCkI7.9Td8IPIGqCW3XK8vlbC",
         "img": "inicio-de-sesion-administrador-en-el-icono-del-portatil-vector-stock-166205404.jpg"
     },
-    {"name": "Liam", "lastname": "Johnson", "email": "liam@example.com", "password": null, "img": "default.png"},
-    {"name": "Emma", "lastname": "Williams", "email": "emma@example.com", "password": null, "img": "default.png"},
-    {"name": "Oliver", "lastname": "Smith", "email": "oliver@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Davis", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Noah", "lastname": "Brown", "email": "noah@example.com", "password": null, "img": "default.png"},
-    {"name": "Isabella", "lastname": "Taylor", "email": "isabella@example.com", "password": null, "img": "default.png"},
-    {"name": "Sophia", "lastname": "Miller", "email": "sophia@example.com", "password": null, "img": "default.png"},
-    {"name": "Jackson", "lastname": "Anderson", "email": "jackson@example.com", "password": null, "img": "default.png"},
-    {"name": "Olivia", "lastname": "Thomas", "email": "olivia@example.com", "password": null, "img": "default.png"},
-    {"name": "Lucas", "lastname": "Harris", "email": "lucas@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Jones", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Liam", "lastname": "Moore", "email": "liam@example.com", "password": null, "img": "default.png"},
-    {"name": "Emma", "lastname": "Wilson", "email": "emma@example.com", "password": null, "img": "default.png"},
-    {"name": "Oliver", "lastname": "Martinez", "email": "oliver@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Perez", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Noah", "lastname": "Robinson", "email": "noah@example.com", "password": null, "img": "default.png"},
-    {"name": "Isabella", "lastname": "Johnson", "email": "isabella@example.com", "password": null, "img": "default.png"},
-    {"name": "Sophia", "lastname": "White", "email": "sophia@example.com", "password": null, "img": "default.png"},
-    {"name": "Jackson", "lastname": "Clark", "email": "jackson@example.com", "password": null, "img": "default.png"},
-    {"name": "Olivia", "lastname": "Lewis", "email": "olivia@example.com", "password": null, "img": "default.png"},
-    {"name": "Lucas", "lastname": "Ward", "email": "lucas@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Scott", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Liam", "lastname": "Young", "email": "liam@example.com", "password": null, "img": "default.png"},
-    {"name": "Emma", "lastname": "Evans", "email": "emma@example.com", "password": null, "img": "default.png"},
-    {"name": "Oliver", "lastname": "Hill", "email": "oliver@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Cooper", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Noah", "lastname": "King", "email": "noah@example.com", "password": null, "img": "default.png"},
-    {"name": "Isabella", "lastname": "Morgan", "email": "isabella@example.com", "password": null, "img": "default.png"},
-    {"name": "Sophia", "lastname": "Bell", "email": "sophia@example.com", "password": null, "img": "default.png"},
-    {"name": "Jackson", "lastname": "Wood", "email": "jackson@example.com", "password": null, "img": "default.png"},
-    {"name": "Olivia", "lastname": "Rogers", "email": "olivia@example.com", "password": null, "img": "default.png"},
-    {"name": "Lucas", "lastname": "Cole", "email": "lucas@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Stewart", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Liam", "lastname": "Perry", "email": "liam@example.com", "password": null, "img": "default.png"},
-    {"name": "Emma", "lastname": "Cox", "email": "emma@example.com", "password": null, "img": "default.png"},
-    {"name": "Oliver", "lastname": "Hayes", "email": "oliver@example.com", "password": null, "img": "default.png"},
-    {"name": "Ava", "lastname": "Powell", "email": "ava@example.com", "password": null, "img": "default.png"},
-    {"name": "Noah", "lastname": "Bryant", "email": "noah@example.com", "password": null, "img": "default.png"}
+    {
+        "name": "Liam",
+        "lastname": "Johnson",
+        "email": "liam@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Emma",
+        "lastname": "Williams",
+        "email": "emma@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Oliver",
+        "lastname": "Smith",
+        "email": "oliver@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Davis",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Noah",
+        "lastname": "Brown",
+        "email": "noah@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Isabella",
+        "lastname": "Taylor",
+        "email": "isabella@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Sophia",
+        "lastname": "Miller",
+        "email": "sophia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Jackson",
+        "lastname": "Anderson",
+        "email": "jackson@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Olivia",
+        "lastname": "Thomas",
+        "email": "olivia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Lucas",
+        "lastname": "Harris",
+        "email": "lucas@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Jones",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Liam",
+        "lastname": "Moore",
+        "email": "liam@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Emma",
+        "lastname": "Wilson",
+        "email": "emma@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Oliver",
+        "lastname": "Martinez",
+        "email": "oliver@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Perez",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Noah",
+        "lastname": "Robinson",
+        "email": "noah@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Isabella",
+        "lastname": "Johnson",
+        "email": "isabella@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Sophia",
+        "lastname": "White",
+        "email": "sophia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Jackson",
+        "lastname": "Clark",
+        "email": "jackson@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Olivia",
+        "lastname": "Lewis",
+        "email": "olivia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Lucas",
+        "lastname": "Ward",
+        "email": "lucas@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Scott",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Liam",
+        "lastname": "Young",
+        "email": "liam@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Emma",
+        "lastname": "Evans",
+        "email": "emma@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Oliver",
+        "lastname": "Hill",
+        "email": "oliver@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Cooper",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Noah",
+        "lastname": "King",
+        "email": "noah@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Isabella",
+        "lastname": "Morgan",
+        "email": "isabella@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Sophia",
+        "lastname": "Bell",
+        "email": "sophia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Jackson",
+        "lastname": "Wood",
+        "email": "jackson@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Olivia",
+        "lastname": "Rogers",
+        "email": "olivia@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Lucas",
+        "lastname": "Cole",
+        "email": "lucas@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Stewart",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Liam",
+        "lastname": "Perry",
+        "email": "liam@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Emma",
+        "lastname": "Cox",
+        "email": "emma@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Oliver",
+        "lastname": "Hayes",
+        "email": "oliver@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Ava",
+        "lastname": "Powell",
+        "email": "ava@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Noah",
+        "lastname": "Bryant",
+        "email": "noah@example.com",
+        "password": null,
+        "img": "default.png"
+    },
+    {
+        "name": "Angel",
+        "lastname": null,
+        "email": "angeelporlan4@gmail.com",
+        "password": "$2y$10$VHQItOLj\/HYtwjGeDMf28eGddwOqX0IX2jfFJP71JIV92C8FiSigm",
+        "img": "default.png"
+    }
 ]

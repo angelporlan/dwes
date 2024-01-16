@@ -13,8 +13,23 @@
     <?php include "components/menu.php"?>
 
     <main>
-        <div class="product">
+        <div class="product"></div>
+
+        <div class="comments">
+            <strong>0 Comentarios</strong>
+            
+            <div class="comment-input">
+            <?php
+            if (isset($_SESSION['userLogin'])) {
+                echo "<img src='./bbdd/{$_SESSION['userLogin']->img}'/>";
+                echo "<input type='text' name='comment' placeholder='¿Qué tienes en mente?'>";
+            } else {
+                echo "<strong>Inicia sesión para poder comentar</strong>";
+            }
+            ?>
+            </div>
         </div>
+        
     </main>
 
     <?php include "components/footer.php"?>
