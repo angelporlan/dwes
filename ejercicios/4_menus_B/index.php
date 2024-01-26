@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +57,10 @@
                         }
                         echo "</div>";
             } else {
+
+                // print "<pre>";
+                // print_r($_SESSION['userLogin']);
+                // print "</pre>";
             ?>
                 <div class="main">
                 <div class="container">

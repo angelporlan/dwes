@@ -278,5 +278,26 @@
         "email": "angeelporlan4@gmail.com",
         "password": "$2y$10$VHQItOLj\/HYtwjGeDMf28eGddwOqX0IX2jfFJP71JIV92C8FiSigm",
         "img": "default.png"
+    },
+    {
+        "name": null,
+        "lastname": null,
+        "email": "angeelpor123lan4@gmail.com",
+        "password": "$2y$10$jsSKvcbwvpljvbxmUw5eC.kDFAZob6GUgsf\/MaiQqjPKrgc9pEFoG",
+        "img": "default.png"
+    },
+    {
+        "name": "sebas",
+        "lastname": null,
+        "email": "sebass@g.xom",
+        "password": "$2y$10$0I366XfkBR9XV4GDL6yj1O4.XDEk7im3SGhi3fFoUOuhXPdU5pO9C",
+        "img": "default.png"
+    },
+    {
+        "name": null,
+        "lastname": null,
+        "email": "sebasss@gmail.com",
+        "password": "$2y$10$ODFEWV53ykjKL9KNmKxA4edA3WoDu7n1ZnW3lQntdVmsgtYFyuh5S",
+        "img": "default.png"
     }
 ]

@@ -47,5 +47,12 @@
         "email": "b@b.b",
         "password": "$2y$10$7sKTIV7vBcNZpme7khQEk.VN1QZT390AgC7diuR4iVKcF6MaPMUl.",
         "img": "default.png"
+    },
+    {
+        "name": null,
+        "lastname": null,
+        "email": "angeelporlan343@gmail.com",
+        "password": "$2y$10$ATNgrjDSyVvmARIr6j8Ouu.uBRZUOTZ75nzZSkUgJuayCkqaiZKAS",
+        "img": "default.png"
     }
 ]

@@ -18,7 +18,7 @@ require_once("funciones.php");
         cabecera("Inicio", 'MENU_VOLVER');
     ?>
     <main>
-    <form action="borrado2.php" method="post">
+    <form action="modificar2.php" method="post">
     <?php
             $pdo = conectaDb();    
             $tabla = "personas";
@@ -44,7 +44,7 @@ require_once("funciones.php");
 
                     foreach ($resultado as $registro) {
         print "      <tr>\n";
-        print '        <td> <input type="checkbox" name="persona[]" value=" ' . $registro['id'] . '"/></td>';
+        print '        <td> <input type="radio" name="persona" value=" ' . $registro['id'] . '"/></td>';
         print "        <td>$registro[id]</td>\n";
         print "        <td>$registro[nombre]</td>\n";
         print "        <td>$registro[apellidos]</td>\n";
@@ -55,7 +55,7 @@ require_once("funciones.php");
 
             ?>
                 
-                    <button>Eliminar</button>
+                    <button>Editar</button>
                 </form>
             <?php
             }

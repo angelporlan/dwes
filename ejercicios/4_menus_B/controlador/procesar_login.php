@@ -30,5 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $_SESSION['userLogin'] = $user;
-    header("Location: ../index.php");
+    echo "<script>window.location.href='../index.php';</script>";
+    //header("Location: ../index.php");
 }

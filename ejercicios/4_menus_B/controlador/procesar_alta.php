@@ -88,4 +88,4 @@
         file_put_contents("../bbdd/data.json", $json_usuarios);
         $_SESSION['userSing'] = '<p class="sing">Usuario añadido</p>';
     }
-header("Location: ../alta.php");
+header("Location:../alta.php");
