@@ -50,7 +50,7 @@ function cabecera($texto, $menu)
     print "      <ul>\n";
     if ($menu == 'MENU_PRINCIPAL') {
         print "        <li><a href='confirmar_borrado.php'>Borrar todo</a></li>";
-        print "        <li><a href='añadir_registro.php'>Añadir registro</a></li>";
+        print "        <li><a href='anadir_registro.php'>Añadir registro</a></li>";
         print "        <li><a href='borrado.php'>Borrar</a></li>";
         print "        <li><a href='buscar.php'>Buscar</a></li>";
         print "        <li><a href='modificar.php'>Modificar</a></li>";

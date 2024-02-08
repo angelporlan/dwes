@@ -18,7 +18,7 @@ require_once("funciones.php");
         cabecera("Inicio", 'MENU_VOLVER');
     ?>
     <main>
-        <form action="añadir_registro2.php" method="post">
+        <form action="anadir_registro2.php" method="post">
             <header>Registro de Usuario</header>
             <p>Nombre</p>
             <input type="text" name="nombre">
