@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +29,12 @@ include "components/menu.php";
     <input type="text" name="nombre" placeholder="nombre">
     <input type="text" name="apellidos" placeholder="apellidos">
     <button name="valor" value="POST">Enviar</button>
+    <?php
+        if (isset($_SESSION['mensajeAPI'])){
+            echo "<p>$_SESSION[mensajeAPI]</p>";
+            unset($_SESSION['mensajeAPI']);
+        }
+    ?>
 </form>
 
 

@@ -50,18 +50,12 @@ function obtenerPersonasBBDD() {
     }
 }
 
+
 function obtenerPersonaBBDD($id) {
     global $cfg;
     global $pdo;
     // $pdo = conectaDb();
     $consulta = "SELECT * FROM $cfg[nombretabla] WHERE id =$id";
-
-    $resultado = $pdo->query($consulta);
-    if (!$resultado) {
-        return null;
-    } else {
-        return $resultado ->fetch(PDO::FETCH_ASSOC);
-    }
 }
 
 function añadirPersonaBBDD($persona){
@@ -69,26 +63,22 @@ function añadirPersonaBBDD($persona){
     global $pdo;
 
     if ($pdo != null) {
-
-        $consulta = "INSERT INTO $cfg[nombretabla] 
-                    (`nombre`, `apellidos`)
-                     VALUES (:nombre_, :apellidos)";
+        $consulta = "INSERT INTO $cfg[nombretabla] (`nombre`, `apellidos`) VALUES (:nombre_, :apellidos_)";
 
         $resultado = $pdo->prepare($consulta);
         if (!$resultado) {
             return false;
         } elseif (!$resultado->execute([
             ":nombre_" => $persona["nombre"],
-            ":apellidos" => $persona["apellidos"]
+            ":apellidos_" => $persona["apellidos"]
         ])) {
             return false;
         } else {
-            //Insercion OK
+            // Inserción OK
             return true;
-            $pdo = null;
         }
     } else {
-        //$pdo es null
+        // $pdo es null
         return false;
     }
 }
@@ -148,4 +138,18 @@ function editarPersonaBBDD($persona, $id){
         //$pdo es null
         return false;
     }
-}
+
+
+        $listaPersonas = array(); //array con los datos
+
+        //Creo un array de arrais asociativos. 
+        foreach ($resultado as $registro) {
+            $persona = array(
+                "id" => $registro["id"],
+                "nombre" => $registro["nombre"],
+                "apellidos" => $registro["apellidos"]          
+            );
+            array_push($listaPersonas, $persona);
+        }
+        return $listaPersonas;
+    }

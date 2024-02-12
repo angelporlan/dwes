@@ -1,33 +1,59 @@
 <?php
+include_once("./funciones.php");
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $valor = recoge('valor');
     if ($valor == 'POST') {
         $nombre = recoge('nombre');
         $apellidos = recoge('apellidos');
 
-        $body = "{'nombre':'$nombre', 'apellidos':'$apellidos'}";
+        $body_array = array('nombre' => $nombre, 'apellidos' => $apellidos);
+        $body = json_encode($body_array);
 
-        //headers
-        $headers = array(
-            "X-Custom-Header: header-value",
-            "Content-Type: application/json"
-        );
+        $response = conectar_endpoint("POST", "http://127.0.0.1:8000/personas", $body);
 
-        $curlHandle = curl_init();
-        curl_setopt($curlHandle, CURLOPT_URL, "http://127.0.0.1:8000/personas/");
-        curl_setopt($curlHandle, CURLOPT_POST, 1);
-        curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curlHandle, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($curlHandle, CURLOPT_HEADER, false);
-        curl_setopt($curlHandle, CURLOPT_POSTFIELDS, $body);
+        if ($response) {
+            $response = json_decode($response);
+            $_SESSION["mensajeAPI"]  = $response->mensaje;
+            
+        } else {
+            $_SESSION["mensajeAPI"]  = "ERROR:No se ha podido insertar los datos";
+        }
+    }
+
+    if ($valor == 'DELETE') {
+        $id = recoge('idPersona');
+        $body = '';
+
+        $response = conectar_endpoint("DELETE", "http://127.0.0.1:8000/personas/$id", $body);
+
+        if ($response) {
+            $response = json_decode($response);
+            $_SESSION["mensajeAPI"]  = $response->mensaje;
+            
+        } else {
+            $_SESSION["mensajeAPI"]  = "ERROR:No se ha podido insertar los datos";
+        }
+    }
+
+    if ($valor == 'PUT') {
+        $id = recoge('idPersona');
+        $nombre = recoge('nombre');
+        $apellidos = recoge('apellidos');
+
+        $body_array = array('nombre' => $nombre, 'apellidos' => $apellidos);
+        $body = json_encode($body_array);
         
-        // EXECUTE
-        $response = curl_exec($curlHandle);
+        $response = conectar_endpoint("PUT", "http://127.0.0.1:8000/personas/$id", $body);
 
-        //close the connections
-        curl_close($curlHandle);
-
-        echo $response;
+        if ($response) {
+            $response = json_decode($response);
+            $_SESSION["mensajeAPI"]  = $response->mensaje;
+            
+        } else {
+            $_SESSION["mensajeAPI"]  = "ERROR:No se ha podido insertar los datos";
+        }
     }
 }
 
@@ -41,5 +67,5 @@ function recoge($var)
     }
     return null;
 }
-// header("Location: ../anadir_persona.php");
+header("Location: ../anadir_persona.php");
 ?>
